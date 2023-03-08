@@ -1,0 +1,238 @@
+body {
+    
+    background-color: rgb(220, 242, 250);
+	background-image: url(../Imagenes/codigoBinarioTransparente.png);
+    background-repeat:repeat
+    
+	
+  }
+
+  h1{
+	font-size: 18;
+	color: darkblue;
+    margin: 20,15,5,10;
+    padding: auto;
+	text-align: center;
+	text-decoration-line: underline;
+  	text-decoration-color: darkblue;
+	font-family: "Segoe UI Black";
+	
+	line-height: 1.8
+  }
+ 
+  #imagen-CV{
+    height:auto;
+    width:max-content;
+    vertical-align: middle;
+    margin: 0px 25px;
+}
+
+  .Datos{
+    column-count: 2;
+    column-gap: 100px;
+    column-rule:  5px  #86f0f085;
+}
+
+
+#barraColores{
+  width: width;
+  height: 10px;
+  background-image: linear-gradient(90deg,#302df7, #2dc8f7,#798eb6,#2DD3F7);
+  margin: 2px 0px 30px 0px;
+}
+
+
+.lenguajes{
+  column-count: 3;
+  column-gap: 2px;
+  padding-inline-start: 0;
+}
+
+.circular-progress-1,.circular-progress-2,.circular-progress-3{
+  width: 160px;
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.outer-1,.outer-2,.outer-3{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+
+.inner-1,.inner-2,.inner-3{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+              -0,5px -0,5px 0px rgba(255,255,255,1),
+              0,5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.2)
+}
+
+#number-3,#number-2,#number-1{
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+#circle-1{
+  fill: none;
+  stroke: url(#GradientColor-1);
+  stroke-width: 15px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+   
+  
+
+  animation: anim1 2s linear forwards;
+}
+
+#circle-2{
+  fill: none;
+  stroke: url(#GradientColor-2);
+  stroke-width: 15px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim2 2s linear forwards; 
+}
+
+#circle-3{
+  fill: none;
+  stroke: url(#GradientColor-3);
+  stroke-width: 15px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim3 2s linear forwards;
+}
+
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/** animacion del circulo de progreso*/
+
+@keyframes anim1{
+  100%{
+      stroke-dashoffset: 110;
+  }
+}
+
+@keyframes anim2{
+  100%{
+      stroke-dashoffset: 195;
+  }
+}
+
+@keyframes anim3{
+  100%{
+      stroke-dashoffset: 280;
+  }
+}
+
+
+.titulo {
+  padding-bottom: 4em;
+  border-bottom: 1px solid  #6bada9;
+}
+.titulo h2 {
+  float: left;
+  display: flex;
+  margin: 0px;
+  padding:0px;
+  font-size: 1.47em;
+}
+
+.fleVisibilidad {
+  float: left;
+  flex-direction: row;
+  
+  
+  
+}
+
+.fleVisibilidad:hover{
+  background-color: #6bada9;
+  color: #1d0446f3;
+  cursor: pointer;
+}
+
+[id^=mostrar] {
+  display: none;
+}
+
+
+#formularioContactar{
+  margin-top: 20px;
+}
+#formularioContactar input{
+  margin-bottom: 15px;
+}
+
+.cajaFormulario {
+  color: var(--color-texto);
+  background-color: var(--color-pagina);
+  border: 1px solid var(--color-3);
+  border-radius: 3px;
+}
+
+#enviarFormulario:hover{
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(1.25);
+  transition: 0.5s ease 0.05s;
+}
+
+#btnToTop{
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+
+  padding: 20px 8px;
+  background-color: var(--color-1);
+  color: var(--color-3);
+  border-radius: 30%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 5rem;
+  text-align: center;
+  vertical-align:text-bottom;
+  cursor: pointer;
+}
+
+#btnToTop:hover{
+  transform: scale(1.25);
+  transition: 0.5s ease 0.05s;
+}
+
+footer {
+  clear: both;
+  border-top: 1px solid var(--color-3);
+  padding-top: 1em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+a{
+  color: inherit;
+}
+footer a:hover{
+  color: var(--color-3);
+  font-weight: bold;
+}
